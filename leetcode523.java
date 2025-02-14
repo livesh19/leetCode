@@ -5,13 +5,13 @@ class ProductOfNumbers {
     
     public ProductOfNumbers() {
         prefixProduct = new ArrayList<>();
-        prefixProduct.add(1); // Start with 1 as a dummy value for multiplication
+        prefixProduct.add(1);
     }
     
     public void add(int num) {
         if (num == 0) {
             prefixProduct.clear();
-            prefixProduct.add(1); // Reset the product list after encountering zero
+            prefixProduct.add(1); 
         } else {
             int lastProduct = prefixProduct.get(prefixProduct.size() - 1);
             prefixProduct.add(lastProduct * num);
@@ -20,7 +20,7 @@ class ProductOfNumbers {
     
     public int getProduct(int k) {
         int n = prefixProduct.size();
-        if (k >= n) return 0; // If k extends beyond a reset (0 was encountered)
+        if (k >= n) return 0; 
         return prefixProduct.get(n - 1) / prefixProduct.get(n - 1 - k);
     }
 }
