@@ -3,8 +3,8 @@ class Solution {
         StringBuilder result = new StringBuilder();
 
         while (columnNumber > 0) {
-            columnNumber--;  // Adjust for 1-based indexing
-            char ch = (char) ('A' + (columnNumber % 26)); // Get corresponding letter
+            columnNumber--; 
+            char ch = (char) ('A' + (columnNumber % 26)); 
             result.append(ch);
             columnNumber /= 26;
         }
