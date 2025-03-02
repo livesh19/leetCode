@@ -12,7 +12,7 @@ class Solution {
            
             while (strs[i].indexOf(prefix) != 0) {
                 prefix = prefix.substring(0, prefix.length() - 1);
-                // If the prefix becomes empty, return an empty string
+                
                 if (prefix.isEmpty()) {
                     return "";
                 }
