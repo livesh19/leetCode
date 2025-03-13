@@ -7,7 +7,7 @@ class Solution {
             if(num>0&&num!=0){
                 posCount++;
             }
-            else if(num<0){
+            else if(num<0&&num!=0){
                 negCount++;
             }
             max=Math.max(posCount,negCount);
