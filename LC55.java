@@ -7,5 +7,5 @@ class Solution {
         if(maxy>=nums.length-1)return true;
       }
       return false;
-    }
+    } 
 }
