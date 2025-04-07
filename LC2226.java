@@ -23,10 +23,10 @@ class Solution {
     private boolean canDistribute(int[] candies, int mid, long k) {
         if (mid == 0) return false;
         
-        long count = 0;  // Number of children we can serve
+        long count = 0;  
         for (int candy : candies) {
-            count += candy / mid;  // Number of children this pile can serve
-            if (count >= k) return true;  // Early exit
+            count += candy / mid; 
+            if (count >= k) return true; 
         }
         
         return count >= k;
