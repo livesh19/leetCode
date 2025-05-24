@@ -1,11 +1,11 @@
-    // Step 1: If any element is less than k, return -1
+
     for (int num : nums) {
         if (num < k) return -1;
     }
 
     int operations = 0;
     while (true) {
-        // Check if all elements are equal to k
+      
         boolean allEqualToK = true;
         for (int num : nums) {
             if (num != k) {
@@ -18,7 +18,7 @@
         int maxVal = Arrays.stream(nums).max().getAsInt();
         int validH = -1;
 
-        // Search for a valid h
+  
         for (int h = maxVal - 1; h >= k; h--) {
             boolean valid = true;
             int seen = -1;
@@ -37,7 +37,7 @@
             }
         }
 
-        // If no valid h is found, return -1
+     
         if (validH == -1) return -1;
 
         // Perform the operation

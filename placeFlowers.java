@@ -12,7 +12,7 @@ class Solution {
                 boolean leftEmpty = (i == 0 || flowerbed[i - 1] == 0);  
                 boolean rightEmpty = (i == flowerbed.length - 1 || flowerbed[i + 1] == 0); 
                 if (leftEmpty && rightEmpty) {
-                    flowerbed[i] = 1;  // Place a flower here
+                    flowerbed[i] = 1; 
                     count++;
                 }
             }
