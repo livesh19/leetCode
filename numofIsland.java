@@ -11,8 +11,8 @@ class Solution {
         for (int i = 0; i < rows; i++) {
             for (int j = 0; j < cols; j++) {
                 if (grid[i][j] == '1') {
-                    count++; // Found a new island
-                    dfs(grid, i, j); // Mark the entire island as visited
+                    count++; 
+                    dfs(grid, i, j); 
                 }
             }
         }
