@@ -48,12 +48,4 @@ class Solution {
         }
         return true;
     }
-    // static void printmat(int arr[][]){
-    //     for(int i=0;i<9;i++){
-    //         for(int j=0;j<9;j++){
-    //             System.out.print(arr[i][j]+" ");
-    //         }
-    //         System.out.println(" ");
-    //     }
-    // }
 }
